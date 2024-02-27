@@ -1,0 +1,14 @@
+{
+  "name": "docusaurus-plugin-fix-react",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "author": "gerwld",
+  "license": "MIT",
+  "keywords": [
+    "docosaurus",
+    "react",
+    "fix-imports",
+    "reactjs",
+    "hooks"
+  ]
+}
