@@ -1,8 +1,8 @@
-## docosaurus-plugin-fix-react
+# docosaurus-plugin-fix-react
 
 Fixes the issue when npm package / exported Component uses React import, so webpack resolves it not from global node_modules/react but instead from package directory, which causes Hooks and other parts of React not working properly.
 
-Installation:
+## Installation:
 ```bash
 ## NPM
 npm i docosaurus-plugin-fix-react
@@ -16,7 +16,19 @@ pnpm add docosaurus-plugin-fix-react
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 plugins: ["docusaurus-plugin-fix-react"],
-// ... other code
+// ... rest of config
 }
 ```
-  
+### ~ or, alternatively:
+```js
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+plugins: ["./node_modules/docusaurus-plugin-fix-react/index.js"],
+// ... rest of config
+}
+```
+
+<br>
+
+## License
+MIT © [Patryk Jaworski](https://github.com/gerwld)
