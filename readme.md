@@ -11,21 +11,27 @@ yarn add docusaurus-plugin-fix-react
 ## PNPM
 pnpm add docusaurus-plugin-fix-react
 ```
-## Then, add to your docusaurus.config.js:
+## Add to your docusaurus.config.js:
 ```js
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 plugins: ["docusaurus-plugin-fix-react"],
-// ... rest of config
+// ... rest of the config
 }
 ```
-### ~ or, alternatively:
+#### ~ or, alternatively:
 ```js
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 plugins: ["./node_modules/docusaurus-plugin-fix-react/index.js"],
-// ... rest of config
+// ... rest of the config
 }
+```
+
+## If you use PNPM and @type errors appear this may help:
+```bash
+# add next line to your .npmrc file
+node-linker=hoisted
 ```
 
 <br>
